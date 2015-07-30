@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SpellingKit
+namespace NobleMuffins.SpellingKit
 {
 	public interface IDictionary
 	{

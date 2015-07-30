@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace SpellingKit
+namespace NobleMuffins.SpellingKit
 {
 	public interface ISpelling
 	{
