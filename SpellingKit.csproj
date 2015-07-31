@@ -8,6 +8,7 @@
     <RootNamespace>SpellingKit</RootNamespace>
     <AssemblyName>SpellingKit</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <ReleaseVersion>1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

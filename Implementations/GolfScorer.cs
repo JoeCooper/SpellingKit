@@ -2,10 +2,10 @@
 
 namespace NobleMuffins.SpellingKit
 {
-	public class GolfScorer: IScorer
+	public class GolfScorer: IScorer<GolfScore>
 	{
 		#region IScorer implementation
-		public IScore GetScore (IWord challenge, string answer)
+		public GolfScore GetScore (IWord challenge, string answer)
 		{
 			int? bestScore = null;
 			foreach (var spelling in challenge.Spellings) {

@@ -2,10 +2,10 @@
 
 namespace NobleMuffins.SpellingKit
 {
-	public class SimpleScorer: IScorer
+	public class SimpleScorer: IScorer<SimpleScore>
 	{
 		#region IScorer implementation
-		public IScore GetScore (IWord challenge, string answer)
+		public SimpleScore GetScore (IWord challenge, string answer)
 		{
 			var result = false;
 			var trimmedAnswer = answer.Trim ();

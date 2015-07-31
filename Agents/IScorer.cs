@@ -2,9 +2,9 @@
 
 namespace NobleMuffins.SpellingKit
 {
-	public interface IScorer
+	public interface IScorer<T> where T: IScore
 	{
-		IScore GetScore(IWord challenge, string answer);
+		T GetScore(IWord challenge, string answer);
 	}
 }
 
