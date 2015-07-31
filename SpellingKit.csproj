@@ -32,10 +32,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ISpelling.cs" />
-    <Compile Include="IDictionary.cs" />
-    <Compile Include="IWord.cs" />
-    <Compile Include="ISampleSentence.cs" />
+    <Compile Include="Models\IDictionary.cs" />
+    <Compile Include="Models\ISampleSentence.cs" />
+    <Compile Include="Models\ISpelling.cs" />
+    <Compile Include="Models\IWord.cs" />
+    <Compile Include="Agents\IChallenger.cs" />
+    <Compile Include="Models\IScore.cs" />
+    <Compile Include="Agents\IScorer.cs" />
+    <Compile Include="Implementations\GolfScorer.cs" />
+    <Compile Include="Implementations\GolfScore.cs" />
+    <Compile Include="Implementations\SimpleScore.cs" />
+    <Compile Include="Implementations\SimpleScorer.cs" />
+    <Compile Include="Implementations\SimpleChallenger.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Agents\" />
+    <Folder Include="Models\" />
+    <Folder Include="Implementations\" />
+  </ItemGroup>
 </Project>
