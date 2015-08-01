@@ -8,7 +8,6 @@
     <RootNamespace>SpellingKit</RootNamespace>
     <AssemblyName>SpellingKit</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <ReleaseVersion>1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,11 +44,15 @@
     <Compile Include="Implementations\SimpleScore.cs" />
     <Compile Include="Implementations\SimpleScorer.cs" />
     <Compile Include="Implementations\SimpleChallenger.cs" />
+    <Compile Include="Implementations\SmartChallenger.cs" />
+    <Compile Include="Models\ILocalizedItem.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Agents\" />
     <Folder Include="Models\" />
     <Folder Include="Implementations\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
 </Project>

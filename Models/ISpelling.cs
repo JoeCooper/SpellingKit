@@ -4,10 +4,9 @@ using System.Globalization;
 
 namespace NobleMuffins.SpellingKit
 {
-	public interface ISpelling
+	public interface ISpelling: ILocalizedItem
 	{
 		string Text { get; }
-		IEnumerable<CultureInfo> Locales { get; }
 	}
 }
 
