@@ -4,11 +4,17 @@ namespace NobleMuffins.SpellingKit
 {
 	public class GolfScore: IScore
 	{
-		public readonly int score;
+		private readonly int score;
 		
 		public GolfScore (int score)
 		{
 			this.score = score;
+		}
+
+		public int Score {
+			get {
+				return score;
+			}
 		}
 
 		#region IScore implementation
